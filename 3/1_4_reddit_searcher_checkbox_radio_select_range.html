@@ -1,0 +1,134 @@
+<!-- https://www.reddit.com/search/?q=silkie 
+    https://www.google.com/search?q=helloworld 
+    https://www.youtube.com/results?search_query=pewdiepie-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hijacking</title>
+</head>
+
+<body>
+    <main>
+        <div>
+            <h1>Subreddit/Google/Youtube Searcher</h1>
+            <form action="https://www.reddit.com/search">
+                <p>
+                    <label for="subreddit">Search the subreddit: </label>
+                    <input type="text" id="subreddit" name="q">
+                </p>
+            </form>
+
+            <form action="https://www.google.com/search">
+                <p>
+                    <label for="google">Search the google: </label>
+                    <input type="text" id="google" name="q">
+                </p>
+            </form>
+
+            <form action="https://www.youtube.com/results">
+                <p>
+                    <label for="youtube">Search For Youtube: </label>
+                    <input type="text" name="search_query" id="youtube">
+                </p>
+                <p><button>Search</button></p>
+            </form>
+        </div>
+
+        <div>
+            <h3>CheckBox</h3>
+
+            <form action="/tacos">
+                <!-- inside input, if we put checked then it will be the checkbox that will already be ticked. -->
+                <p>
+                    <label for="yes">I Agree to The Terms Of Service</label>
+                    <input type="checkbox" id="yes" name="TOS" checked>
+                </p>
+                <p>
+                    <button>Submit The CheckBox</button>
+                </p>
+            </form>
+        </div>
+
+        <div>
+            <h3>RadioButtons</h3>
+            <form action="/tacos">
+                <!-- Remember The name of all the inputs should be same if we want them to be in the same group and want only one of the buttons should be checked. -->
+                <p>
+                    <label for="s">Small</label>
+                    <input type="radio" name="size" id="s" value="s">
+                </p>
+                <p>
+                    <label for="m">Medium</label>
+                    <input type="radio" name="size" id="m" value="m">
+                </p>
+                <P>
+                    <label for="l">Large</label>
+                    <input type="radio" name="size" id="l" value="l">
+                </P>
+                <button>Submit The RadioButton</button>
+            </form>
+        </div>
+
+        <div>
+            <h3>Select: A Dropbox</h3>
+            <form action="/tacos">
+                <p>
+                    <label for="meal">--Please Select A Meal--</label>
+                    <select name="Khana" id="meal">
+                        <!-- Again Value is what will be submitted to the server and will be present in the url. -->
+                        <option value="p_chilli">Paneer Chilli</option>
+                        <option value="b_chikken">Butter Chicken</option>
+                        <option value="chikken_tikka">Chicken Tikka Masala</option>
+                    </select>
+                </p>
+                <p>
+                    <button>Submit The Meal</button>
+                </p>
+            </form>
+        </div>
+
+        <div>
+            <h3>Range: Slide Control</h3>
+            <form action="/tacos">
+                <p>
+                    <label for="volume">Volume</label>
+                    <input type="range" name="vol" id="volume"
+                        min="0" max="100">
+                </p>
+                <p>
+                    <label for="Bass">Bass</label>
+                    <input type="range" name="b" id="bass"
+                        min="0" max="50">
+                </p>
+
+                <button>Submit The Settings</button>
+            </form>
+        </div>
+
+        <div>
+            <h3>TextArea</h3>
+            <form action="/tacos">
+                <p>
+                    <label for="poem">Write Your Beautiful Poem Here: </label> <br>
+                    <textarea name="poem" id="poem" cols="40" rows="10" placeholder="Enter the text here"></textarea>
+                </p>
+            </form>
+        </div>
+        <div>
+            <h3>Required Attribute</h3>
+            <form action="/tacos">
+                <p>
+                    <label for="name">Enter you name</label>
+                    <input type="text" name="name" id="name" required minlength="3" maxlength="15">
+                    <button>Submit</button>
+                </p>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables Basics</title>
+</head>
+<body>
+    <main>
+        <table>
+            <h1>Heaviest Birds</h1>
+            <thead>
+            <tr>
+                <th>Animal</th>
+                <th>Average Mass</th>
+                <th>Maximum Mass</th>
+                <th>Flighted</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Ostrich</td>
+                <td>104</td>
+                <td>156</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>Somali Ostrich</td>
+                <td>90</td>
+                <td>130</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>Wild Turkey</td>
+                <td>13.5</td>
+                <td>39</td>
+                <td>Yes</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <h1>V2</h1>
+        <table>
+            <h1>Heaviest Birds</h1>
+            <thead>
+            <tr>
+                <!-- rowspan="2" makes a heading span 2 rows -->
+                <!-- colspan="2" makes a heading span 2 columns -->
+                <!-- So what we did was make 2 rows. with animal average mass flighted as 1st row (animal and flighted taking up 2 rows) and average mass taking up 1 row. The second row added has nowhere else to go except below average mass column. We did colspan 2 otherwise average mass wiould be above only kg not both kg and lbs. -->
+                <th rowspan="2">Animal</th>
+                <th colspan="2">Average Mass</th>
+                <th rowspan="2">Flighted</th>
+            </tr>
+            <tr>
+                <th>KG</th>
+                <th>LBS</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Ostrich</td>
+                <td>104</td>
+                <td>240</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>Somali Ostrich</td>
+                <td>90</td>
+                <td>200</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>Wild Turkey</td>
+                <td>13.5</td>
+                <td>29.8</td>
+                <td>Yes</td>
+            </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>

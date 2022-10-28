@@ -1,0 +1,24 @@
+1. Inline Vs Block elements:
+-> Inline takes 2 spaces according to 2 elements that might be present according to the diagram as shown
+== and == 
+
+-> whereas the 2 block element will take the 2 entire blocks of space irrespective of how big or snmall it may be:
+===========================================================================================================================
+and
+===========================================================================================================================
+
+although we can change this feature using css but its an important distiction between them.
+
+2. Grouping/ wrapping different parts of the website is an excellent habit.
+ We can group things together by using either div or span.
+ div is the block wrapping and the span tag is the inline grouping/wrapping. 
+
+3. There are some reserved characters in html like the <> and the & signs and all, we shouldnt directly use them. we should use html entities and get the specific set of signs associated with the character <>. for eg > is named &gt;
+
+4. Semantic Markup is an important aspect in making websites. We cannot have div div div div and divs for all the small small sections of the websites, it makes readability 0 and to know which div is for what extremely difficult.
+And as we saw earlier, using wrapping methods like div and spans are extremely important.
+A semantic element clearly describes its meaning to both the browser and the developer.
+So Semantic essentially means that "Calling something by its other name" keeping the functionality the same.
+for eg: div div div X but main div header section footer nav 
+all these have the same functionality as div but they specify which section they are responsihble for making the website more readable and managable. main for the main div, nav for the navigation bar div, header for header div.
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=`">
+    <title>Input</title>
+</head>
+
+<body>
+    <main>
+
+        <head>
+            <h1>Forms</h1>
+        </head>
+        <button>Outside the form button !</button>
+        <!-- This is a server related feature which specifies where this form will be sent to -->
+        <!-- Placeholders are the texts that appear when we are yet to input the form -->
+        <form action="/tacos">
+            <!-- http://127.0.0.1:5500/tacos?full_name=PrathamModi&password=qwerty&rang=%23260303&number=69
+            read the url again
+        since i added the username as PrathamModi and password as qwerty and so on...
+    we can see that the part about tacos comes from form action
+after ? the full_name = {value}&password={value}.... & is the connecting link between the different fields of the form.-->
+
+        <button type="button">DO NOT submit the form</button>
+
+        <!-- As told several times, wrapping everything is an excelent practice. So we use paragraph tag to wrap -->
+        <p>
+            <!-- Note that the label for "" and the input id "" should be same and UNIQUE -->
+            <label for="username">Enter the username</label>
+            <input id="username" type="text" placeholder="Name" name="full_name">
+            <!-- name is something that gets shown in the url associated with the value submitted in the form -->
+        </p>
+
+        <p>
+            <!-- Enter the password text is called the label -->
+            <label for="password">Enter the password</label>
+            <input type="password" placeholder="Password" id="password" name="password">
+        </p>
+
+        <p>
+            <label for="color">Choose your favourie color</label>
+            <input id="color" type="color" placeholder="Color" name="rang">
+        </p>
+
+        <p>
+            <label for="number">Choose your favourie number. Tip: IT SHOULD BE 69</label>
+            <input id="number" type="number" placeholder="Number" name="number">
+            <!-- Here we can have min and max numbers by putting these attributes inside the input tag. -->
+        </p>
+        <button type="submit">Submit The Form</button>
+        <!-- or you could do is button default only no type will always be submitting the form -->
+    </form>
+    </main>
+</body>
+
+</html>

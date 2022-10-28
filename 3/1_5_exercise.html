@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Race Registration Form</title>
+</head>
+
+<body>
+    <form action="/tacos">
+        <h1>Race Registraion!</h1>
+        <div>
+            <p>
+                <label for="f_name">First Name</label>
+                <input type="text" name="f_name" id="f_name" placeholder="Colt" required min="3" max="15">
+
+                <label for="l_name">Last Name</label>
+                <input type="text" name="l_name" id="l_name" placeholder="Steele" required min="3" max="15">
+            </p>
+        </div>
+
+        <p>Select a Race</p>
+        <div>
+            <!-- Not a good practice to have input for and id to start with a number so thats why 5k not a good id -->
+            <label for="funrun">Fun Run 5k</label>
+            <input type="radio" name="race" id="funrun" value="5k" required><br>
+
+            <label for="h_marathon">Half Marathon</label>
+            <input type="radio" name="race" id="h_marathon" value="h_marathon" required><br>
+
+            <label for="f_marathon">Full Marathon</label>
+            <input type="radio" name="race" id="f_marathon" value="f_marathon" required>
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required min="3" max="15" placeholder="abc@xyz.com">
+
+            <label for="password">Password</label>
+            <input type="password" name="pass" id="password" required min="3" max="15" placeholder="Shhh...">
+        </div>
+
+        <div>
+            <label for="age">Select Age Group</label>
+            <select name="age" id="age" required>
+                <option value="under 18">under 18</option>
+                <option value="18-30">18-30</option>
+                <option value="30-50">30-50</option>
+                <option value="50+">50+</option>
+            </select>
+        </div>
+        <button>Register!</button>
+    </form>
+</body>
+
+</html>

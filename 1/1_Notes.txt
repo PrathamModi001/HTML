@@ -1,0 +1,8 @@
+1. Always have only 1 h1 in the document and never use h1-h6 for size purposes we can always use css to change the font size and everything.
+
+2.Always have paragraph enclose a few set of lines. Creating box like enclosures is important and recommended.
+
+3. We can also have nested lists. i.e. lists inside lists, ordered or unordered.
+
+4. We should only add images through html we should not use width and height attributes of the img tagin html. It should be solely done through css.
+ 

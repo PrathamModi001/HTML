@@ -1,0 +1,54 @@
+1. Again Wrapping everything inside something is a good practice. If we are writing the heading in the table using tr>th we should encapsulate everything inside thead.
+similarly the body part inside the tbody
+and finally if we have someting like the average of all or some total or something we should encapsulate it inside tfoot.
+
+2. Label: We associate a label with an input.You should note that label on a given page only 1 element should have a given Labelid. It should be unique to that element. IT SHOULD NOT BE REUSED.
+
+3. When we click on "Enter a username" text (actually a label) the clickbox will get ticked/ input will start. This shows taht the label and input forms are associated. IF it does NOT get clicked, it means the input id "" and label for "" arenot matching.
+
+4. We would want to seperate our forms with a newline. We might be tempted to use br tags. BUT we should remember the basic rule, Wrap everything inside a grouping tag. So we should use p tag or div tag or some semantic tag. 
+
+5. IF not explicitely coded, the default behaviour will always be to submit the form. (it will be of the type="submit" type button)
+
+6. If the button is placed outside the form tag, it wont do anything. We can make it do something using js.
+
+7. Name tag is extremely important and should be used with every input tag in forms. 
+
+8. IN SHORT form outside of p(ya kuchh aur) ke andar label tag + input (inside it: id + name) 
+
+9. When making checkboxes, we sometimes might want the checkbox to be automatically be checked. We can do this by writing checked inside the input tag (anywhere)
+
+10. If we have checked on the checkbox and submitted. the url will look something like this:
+http://127.0.0.1:5500/tacos?TOS=on
+
+where /tacos was the form action || TOS was the name of the name (inside input) and since it was checked: it submiitted the form as "TOS=on"
+
+in case where the checkbox isnt checked: 
+http://127.0.0.1:5500/tacos?
+
+SO THIS IS HOW THE CHECKBOX URLs WORK
+
+11. The difference between CHECKBOXES and RADIO BUTTONS is that in checkboxes we can choose more than one options whereas in radio button we can only choose one out all.
+
+12. To make the different radiobuttons associated with one another, i.e. checking only one out of the many, we have to make the name of all the input radiobuttons same.
+
+13. Note that whatever is inside the value inside the input tag in radiobuttons, is what will be submitted in the url.So making sendible valyues is appreciated.
+
+14. For Select input, the 'label for' and the select id should be same.
+
+15. The select Name and the option value as a combination (meal=b_chikken)is what will be submitted during the server side operations.
+
+16. Here also we can preselect by using the selected inside input.
+
+17. We can make a slider input using range input. We can also have custom minimum and maximum values of the slider by statig the min and max inside the input tag. We can have the slider multiply values adder. For eg min=1 and step=7 then the slider can only show 1-8-15-23-30 that is 7 ke steps banana.
+We can also have the initial value set by putting the value=75 then the slider will start at 75.
+
+18. We can have a textarea attribute which will be used when we want the user to type something on the website.
+it has cols rows placeholder. Name will be used in the url in the backend. ID and the label for should be same,as usual.
+
+19. Required attrbute is used when we compulsarily want a value entered by the user, without it the form cannotbe submitted. We add required attribute inside the input tag.
+
+20. Good practice to have minlength and maxlength attributes when taking in username and passwords. Maxlength doesnt let any more characters input.
+Similarly we have min and max which are minimum and maximum length for NUMERIC values.
+
+--> You can check out different type of inputs will have different type of validations like an input type email will have validations similar to something@something not checking if its real, but checking the pattern input. For Eg: http://something and not checking if its real, only the pattern.
